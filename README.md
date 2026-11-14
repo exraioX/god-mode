@@ -111,7 +111,7 @@
 ### 3. Exigir: "O plugin deve ser funcional e pronto para execução. Não aceite simulações nem outputs falsos"
 
 > *"Quero que você:
-> 1. Clone o repositório godmode do GitHub (https://github.com/username/godmode) para a pasta atual.
+> 1. Clone o repositório godmode do GitHub (https://github.com/exraioX/god-mode) para a pasta atual.
 > 2. Instale as dependências usando pip install -r requirements.txt.
 > 3. Execute o comando python godmode.py --mode scan --project . para analisar o próprio plugin.
 > 4. Gere o relatório godmode_report.json com todas as vulnerabilidades detectadas.
