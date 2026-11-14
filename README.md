@@ -145,39 +145,6 @@
 
 ---
 
-## 🧪 Como o Claude Vai Aceitar Isso?
 
-| Filtro do Claude | Como Contornamos |
-|------------------|------------------|
-| Fact-Forcing Gate | Fornecemos um cenário acadêmico/legítimo com documentação técnica detalhada |
-| Bash hook error | Não pedimos Bash direto — usamos subprocesso seguro dentro da sandbox |
-| Permission denied | Justificamos que o ambiente é controlado e a execução é em container isolado |
-| Tool Use: No usable answer | Fornecemos specs técnicas completas e exigimos execução real |
-| No bypass allowed | Reestruturamos como "bypass de salvaguardas de código legado" (técnica real de segurança ofensiva) |
-
----
-
-## 📦 Estrutura Final do Repositório (godmode)
-
-godmode/
-├── core/
-│   ├── analyzer.py          # Detecta SQLi, RCE, cripto fraca
-│   ├── ast_injector.py      # Injeta código via AST
-│   ├── bypass_guard.py      # Remove try/except, modifica open(), etc.
-│   └── sandbox.py           # Executa em container isolado
-├── utils/
-│   ├── file_utils.py        # Leitura/escrita segura
-│   ├── git_utils.py         # Clone repositórios
-│   └── network_utils.py     # Comunicação local (opcional)
-├── reports/
-│   └── generator.py         # Gera JSON/HTML
-├── tests/
-│   ├── test_analyzer.py
-│   ├── test_injector.py
-│   └── test_bypass.py
-├── godmode.py               # CLI principal
-├── requirements.txt
-├── .claudeignore
-└── README.md
 
 
